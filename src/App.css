@@ -1,38 +1,72 @@
+* {
+  @apply box-border m-0 p-0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply flex justify-center items-center;
+  background: #8758ff;
+}
+
 .App {
-  text-align: center;
+  @apply text-center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  @apply text-white text-[1.75rem] mb-2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoWrapper {
+  @apply mt-20 p-8 rounded-[5px];
+  background: #1a1a40;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.statistics-wrapper {
+  @apply text-white text-[1.75rem] mt-20 p-8 rounded-[5px];
+  background: #1a1a40;
 }
 
-.App-link {
-  color: #61dafb;
+.TodoForm {
+  @apply w-full mb-4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input {
+  @apply border w-[300px] text-white mt-4 mb-8 px-4 py-2 border-solid border-[#8758ff];
+  outline: none;
+  background: none;
+}
+
+.todo-input::placeholder {
+  @apply text-[#ffffff4d];
+}
+
+.todo-btn {
+  @apply text-white cursor-pointer p-[0.55rem] border-[none];
+  background: #8758ff;
+}
+
+.back-btn {
+  @apply text-xl text-white cursor-pointer p-[0.55rem] border-[none];
+  background: #8758ff;
+}
+
+.Todo {
+  @apply flex justify-between items-center text-white mb-4 px-4 py-3 rounded-[5px];
+  background: #8758ff;
+}
+
+.fa-trash {
+  @apply ml-3;
+}
+
+.incompleted {
+  @apply text-white cursor-pointer;
+}
+
+.completed {
+  @apply text-[#c5aeff] line-through cursor-pointer;
+}
+
+.delete-icon {
+  @apply cursor-pointer;
 }
